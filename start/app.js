@@ -30,7 +30,8 @@ const providers = [
 |
 */
 const aceProviders = [
-  'lucid-mongo/providers/MigrationsProvider'
+  'lucid-mongo/providers/MigrationsProvider',
+  '@adonisjs/vow/providers/VowProvider'
 ]
 
 /*
