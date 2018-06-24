@@ -18,7 +18,8 @@ const providers = [
   'lucid-mongo/providers/LucidMongoProvider',
   '@adonisjs/redis/providers/RedisProvider',
   '@adonisjs/validator/providers/ValidatorProvider',
-  '@adonisjs/framework/providers/ViewProvider'
+  '@adonisjs/framework/providers/ViewProvider',
+  'adonis-acl/providers/AclProvider'
 ]
 
 /*
@@ -32,7 +33,8 @@ const providers = [
 */
 const aceProviders = [
   'lucid-mongo/providers/MigrationsProvider',
-  '@adonisjs/vow/providers/VowProvider'
+  '@adonisjs/vow/providers/VowProvider',
+  'adonis-acl/providers/CommandsProvider',
 ]
 
 /*
@@ -47,7 +49,10 @@ const aceProviders = [
 |   { Route: 'Adonis/Src/Route' }
 |
 */
-const aliases = {}
+const aliases = {
+  Role: 'Adonis/Acl/Role',
+  Permission: 'Adonis/Acl/Permission'
+}
 
 /*
 |--------------------------------------------------------------------------
